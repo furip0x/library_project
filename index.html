@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LIBRARY PROJECT</title>
+  <link rel="icon" href="favicon.png" type="image/png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <header class="main-header">
+    <div class="main-header__logo">
+      <img src="img/logo.svg" alt="">
+    </div>
+    <h1 class="main-header__title">LIBRARY</h1>
+  </header>
+  <main class="main-content">
+    <div class="open-popup">
+      <button id="open-popup" class="open-popup__btn" type="button">
+        New Book
+      </button>
+    </div>
+    <div class="container">
+      <div id="books-list" class="books-list"></div>
+    </div>
+    <div id="book-popup" class="book-popup">
+      <div class="book__bg"></div>
+      <div class="book__form">
+        <div class="book__form__close">&times;</div>
+        <h3 class="book__form__title">Add New Book</h3>
+        <div class="input-group-wrapper">
+          <div class="input-group">
+            <label for="title" class="input-group__label">Title:</label>
+            <input type="text" id="title" class="input-group__input">
+          </div>
+          <div class="input-group">
+            <label for="author" class="input-group__label">Author:</label>
+            <input type="text" id="author" class="input-group__input">
+          </div>
+          <div class="input-group">
+            <label for="pages" class="input-group__label">Pages:</label>
+            <input type="number" id="pages" class="input-group__input">
+          </div>
+          <div class="input-group input-group--inline">
+            <div class="checkbox">
+              <input type="checkbox" id="read" class="checkbox__input">
+              <label for="read" class="checkbox__label">Read:</label>
+            </div>
+          </div>
+          <div class="input-group">
+            <button type="button" id="add-book-btn" class="input-group__submit">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+<script src="js/scripts.js"></script>
+<!-- Logo icon made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> -->
+
+</html>
