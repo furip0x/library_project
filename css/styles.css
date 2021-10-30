@@ -71,11 +71,11 @@ body {
 }
 
 .open-popup__btn::before {
-  content: "";
+  content: '';
   display: block;
   width: 13px;
   height: 13px;
-  background: url("../img/plus-white.svg");
+  background: url('../img/plus-white.svg');
   background-size: 13px 13px;
   margin: -2px 5px 0 0;
 }
@@ -315,7 +315,7 @@ body {
 }
 
 .checkbox__label::before {
-  content: "";
+  content: '';
   position: absolute;
   right: 0;
   top: 0;
@@ -326,26 +326,26 @@ body {
   transition: border-color 0.1s, background-color 0.1s;
 }
 
-.checkbox__input:checked~label::before {
+.checkbox__input:checked ~ label::before {
   border-color: #ee6c4d;
   background-color: #ee6c4d;
 }
 
 .checkbox__label::after {
-  content: "";
+  content: '';
   position: absolute;
   right: 5px;
   top: 4px;
   z-index: 2;
   width: 18px;
   height: 18px;
-  background: url("../img/white-check.svg");
+  background: url('../img/white-check.svg');
   transform: scale(0);
   transform-origin: 50% 50%;
   transition: transform 0.2s;
 }
 
-.checkbox__input:checked~label::after {
+.checkbox__input:checked ~ label::after {
   transform: scale(1);
 }
 
@@ -367,7 +367,7 @@ body {
 }
 
 /* RESPONSIVE */
-@media(max-width: 1200px) {
+@media (max-width: 1200px) {
   .container {
     padding: 0 30px;
   }
@@ -377,15 +377,21 @@ body {
   }
 }
 
-@media(max-width: 900px) {
+@media (max-width: 900px) {
   .books-list {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 30px;
   }
 }
 
-@media(max-width: 700px) {
+@media (max-width: 700px) {
   .books-list {
     grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (max-width: 560px) {
+  .book-form {
+    margin: 30px 65px 30px 15px;
   }
 }
